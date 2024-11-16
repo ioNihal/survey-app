@@ -35,7 +35,6 @@
 
 .ratingBtnGroup button {
   padding: 0.5rem 1rem;
-  
   @media screen and (max-width: 540px) {
     padding: 6px 5px;
   }
