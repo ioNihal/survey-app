@@ -70,7 +70,7 @@ const QuestionScreen = () => {
 
 
     return (
-        <div className="question-screen container-lg d-flex flex-column justify-content-center align-items-center animate__animated animate__pulse">
+        <div className="question-screen text-center d-flex flex-column justify-content-center align-items-center animate__animated animate__pulse">
             <h2>
                 Question {currentIndex + 1}/{questions.length}
             </h2>
