@@ -11,8 +11,8 @@ const WelcomeScreen = () => {
     };
 
     return (
-        <div className="welcome d-flex flex-column justify-content-center align-items-center">
-            <h1 className="animate__animated animate__slideInDown">Welcome to our Survey!</h1>
+        <div className="welcome container-md d-flex flex-column justify-content-center align-items-center">
+            <h1 className="fs-6 animate__animated animate__slideInDown">Welcome to our Survey!</h1>
             <button id="startBtn" className="btn btn-lg btn-primary animate__animated animate__fadeInUp" onClick={handleStart}>START SURVEY</button>
         </div>
     )
