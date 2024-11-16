@@ -35,8 +35,8 @@ const QuestionScreen = () => {
     const renderInput = () => {
         if (currentQuestion.type === "rating") {
             return (
-                <div className="text-center animate__animated animate__pulse">
-                    <div className="btn-group m" role="group" aria-label="Rating scale">
+                <div className="ratingBtnGroup text-center animate__animated animate__pulse">
+                    <div className="d-flex justify-content-center btn-group" role="group" aria-label="Rating scale">
                         {[...Array(currentQuestion.scale)].map((_, index) => {
                             const value = index + 1;
                             return (
@@ -45,7 +45,6 @@ const QuestionScreen = () => {
                                     type="button"
                                     className={`btn ${responses[currentQuestion.id] === value ? 'btn-danger' : 'btn-outline-secondary'}`}
                                     onClick={() => handleAnswer(value)}
-                                    style={{marginLeft: "1px", marginRight: "1px", marginBottom: "1rem"}}
                                 >
                                     {value}
                                 </button>

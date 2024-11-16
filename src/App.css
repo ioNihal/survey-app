@@ -29,6 +29,20 @@
   }
 }
 
+.ratingBtnGroup {
+  width: 60vw;
+}
+
+.ratingBtnGroup button {
+  padding: 0.5rem 1rem;
+  
+  @media screen and (max-width: 540px) {
+    padding: 6px 6px;
+  
+  }
+
+}
+
 .navigation {
   margin: 1rem 0;
   width: 10rem;
@@ -46,6 +60,11 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
+  font-size: 2rem;
+  @media screen and (max-width: 540px) {
+    font-size: 1rem;
+  }
 }
 
 .confirmation button {
