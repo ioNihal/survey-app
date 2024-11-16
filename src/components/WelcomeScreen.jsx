@@ -6,6 +6,8 @@ const WelcomeScreen = () => {
 
     const navigate = useNavigate();
     const handleStart = () => {
+        localStorage.removeItem("sessionId");
+        localStorage.removeItem(`survey_${localStorage.getItem("sessionId")}`);
         getSessionId();
         navigate("/survey");
     };

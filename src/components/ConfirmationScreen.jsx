@@ -12,7 +12,7 @@ const ConfirmationScreen = () => {
             markSessionCompleted(sessionId);
             const timer = setTimeout(() => navigate("/"), 5000);
             return () => clearTimeout(timer);
-        }
+        } 
     }, [confirmed]);
 
     return (
