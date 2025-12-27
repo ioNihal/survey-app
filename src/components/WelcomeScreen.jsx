@@ -1,6 +1,6 @@
-import React from "react"
 import { useNavigate } from "react-router-dom"
 import { getSessionId } from "../utils/storage"
+import Layout from "./Layout"
 
 const WelcomeScreen = () => {
 
@@ -13,10 +13,19 @@ const WelcomeScreen = () => {
     };
 
     return (
-        <div className="welcome container-md d-flex flex-column justify-content-center align-items-center">
-            <h1 className="animate__animated animate__slideInDown">Welcome to our Survey!</h1>
-            <button id="startBtn" className="btn btn-lg btn-primary animate__animated animate__fadeInUp" onClick={handleStart}>START SURVEY</button>
-        </div>
+        <Layout>
+            <div className="welcome-content d-flex flex-column justify-content-center align-items-center text-center">
+                <h1 className="mb-4">Welcome to our Survey!</h1>
+                <p className="mb-5 text-secondary">We value your feedback. It will only take a minute.</p>
+                <button
+                    id="startBtn"
+                    className="btn-primary-custom"
+                    onClick={handleStart}
+                >
+                    START SURVEY
+                </button>
+            </div>
+        </Layout>
     )
 }
 

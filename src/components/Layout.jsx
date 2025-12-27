@@ -1,0 +1,16 @@
+import '../App.css'; // Ensure styling is applied
+import PropTypes from 'prop-types';
+
+const Layout = ({ children }) => {
+    return (
+        <div className="survey-card animate__animated animate__fadeIn">
+            {children}
+        </div>
+    );
+};
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+};
+
+export default Layout;
