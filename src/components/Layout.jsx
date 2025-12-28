@@ -1,4 +1,4 @@
-import '../App.css'; // Ensure styling is applied
+import '../App.css';
 import PropTypes from 'prop-types';
 
 const Layout = ({ children }) => {
